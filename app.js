@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:3000'  // Replace with your frontend's URL
+  origin: 'https://dhsa-frontend-vercel-h5ozfsjt2-divyanks-projects-3e2680a8.vercel.app/'  // Replace with your frontend's URL
 }));
 // validateUser =(req, res, next)=> {
 //     const { fullName, phoneNumber, collegeName, courseName, year, nativePlace, email } = req.body;
