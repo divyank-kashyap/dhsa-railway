@@ -5,8 +5,9 @@ const cors = require("cors");
 const app = express();
 const port = 3000;
 app.use(express.json());
-app.use(cors());
-
+app.use(cors({
+  origin: 'http://localhost:3000'  // Replace with your frontend's URL
+}));
 // validateUser =(req, res, next)=> {
 //     const { fullName, phoneNumber, collegeName, courseName, year, nativePlace, email } = req.body;
 //     console.log(fullName);
