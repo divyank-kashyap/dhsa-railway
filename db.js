@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.ObjectId;
-mongoose.connect("mongodb+srv://admin:0000@cluster0.u8gug.mongodb.net/association-db");
+mongoose.connect("");
 
 const user = new Schema({
     fullName: String,
